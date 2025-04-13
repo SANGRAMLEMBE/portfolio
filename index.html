@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c562a16b0b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">      
+    <div class="container">
+        <nav class="spaced-navbar" style = "margin-top:-15px;">
+            
+            <img src="images/logo 3.jpeg" class="logo">
+            <ul id="sidemenu" class="nav-list">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AI / ML Devloper</p>
+            <h1>Hi, I'm <span>Sangram</span> <br> From India</h1>
+        </div>
+
+    </div>
+</div> 
+<!------------------about------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Crop - 1.jpg" >
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Sangram, an AI Engineer with a passion for solving complex problems
+                     using machine learning and data science. I hold a degree in Artificial Intelligence from 
+                     Pune University and have experience working on projects in healthcare, finance, 
+                     and e-commerce. My expertise includes Python, TensorFlow, and neural networks, 
+                     with a particular interest in natural language processing and computer vision. 
+                     I enjoy staying updated with the latest AI trends and collaborating with like-minded professionals. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Eduction</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        
+                        <li><span>Python</span><br> Advanced</li>
+                        <li><span>ML</span><br> Advanced</li>
+                        <li><span>SQL</span><br> Intermediate</li>
+                        <li><span>Java Script</span><br> Novice</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jun - Dec 2023  </span><br> Flourisence Pvt. &nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; Python Developer Intern</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Pune University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2024]</span><br>B.TECH (AI) - 8.31</li>
+                        <li><span>Pune University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2020]</span><br>HSC - 63%</li>
+                        <li><span>Sanjeevan Vidyaniketan, Panhala &nbsp;&nbsp;&nbsp;&nbsp;[2018]</span><br>SSC -89% </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------projects------------------------------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>AI ML</h2>
+                <p>I specialize in AI and Machine Learning, with expertise in predictive modeling, 
+                    natural language processing, and computer vision. I am proficient in Python, 
+                    TensorFlow and scikit-learn, and have experience in data preprocessing, feature 
+                    engineering, and model deployment.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-dev"></i>
+                <h2>Web Development</h2>
+                <p>I'm skilled in Python development, specializing in backend development, 
+                    RESTful APIs, Django, Flask, and database management (SQL & NoSQL). </p>
+                <a href="#">Learn more</a>
+            </div>
+    </div>
+</div>
+
+
+<!------------------portfolio------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/img2.jpg">
+                <div class="layer">
+                    <h3>AI Chatbot</h3>
+                    <p> Crafted an AI-powered chatbot that brings conversations to life.  Let's get Stated!!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/stressed.jpg">
+                <div class="layer">
+                    <h3>Mind Matters: ML for Student Well-being</h3>
+                    <p> Built an ML model with PCA, PSO, and ensemble techniques to predict mental health 
+                        risks for 1,000 students. Enabled early interventions, enhancing well-being and 
+                        resilience through smart analytics. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/img3.jpg">
+                <div class="layer">
+                    <h3>Blur Buster: Image Classification with LLM</h3>
+                    <p> Tamed the chaos of blurry visuals by fine-tuning CNNs on a dataset of fogged-up 
+                        images. Hit a solid 70% accuracy, proving sharp results even when the picture's 
+                        hazy. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    
+                </div>
+                
+            </div>
+        </div>
+        <a href="https://github.com/SANGRAMLEMBE" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!------------------contact------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sangramlembe9696@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9158416688</p>
+                <div class="social-icons">
+                    <a href="https://github.com/SANGRAMLEMBE"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sangram-lembe-56262320a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/sangram_27"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/_mr_sangram_27/"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <a href="images/sangram_lembe_resume.pdf" download class="btn btn2">Download CV</a>
+                
+                 
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>
+            copyright @ Sang. Made with <i class="fa-solid fa-heart"></i> by Sangram Lembe
+        </p>
+    </div>
+
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwDvuwZUyd7Oz0pgOTyEFutYFGZ17ufORopdu54lQ8UfikL_7098MhW09vJaoERKgPq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  
+</body>
+</html>
